@@ -1,0 +1,165 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jordi Bartolomé</title>
+  <!-- <link rel="author" href="https://plus.google.com/100586308955148850442"> -->
+  <meta name="description" content="Personal page of Jordi Bartolomé. Web engineer.">
+  <meta name="owner" content="Jordi Bartolomé">
+  <!-- <meta name="google-site-verification" content="E9nl9yu-t9nVotAWy6a62owrP6SR2Sbwo7XZBdDE1QE" /> -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <script src="/scripts/lib/knockout-3.2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild -->
+
+  <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+
+  <!-- build:css styles/styles.css -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <!-- <link rel="stylesheet" href="styles/main.css"> -->
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="fonts/font-awesome-package/css/font-awesome.min.css">
+  <!-- endbuild -->
+  </head>
+
+<body>  
+
+  <div class="navBar" data-bind="css: {top: top()}, foreach: navBar().items">
+    <div class="navItem" data-bind="css: {selected: selected()}, click: scrollTo">
+      <span class="navItemText" data-bind="text: title"></span>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="section" id="home">
+    </div>
+    <div class="homeWrapper">
+      <h1 id="name">Jordi Bartolomé</h1>
+      <h2 id="carrier">Web engineer</h2>
+    </div>
+    <div class="section" id="projects">
+      <div class="sectionTitleWrapper">
+        <h3 class="sectionTitle">Some of the projects I worked on</h3>
+      </div>
+      <div class="projectsWrapper">
+        <div class="projects" data-bind="foreach: projects">
+          <div class="project showTransition" data-bind="event: {click: redirect, mouseover: showDescription, mouseout: hideDescription}" >
+            <img width="300" height="100px" class="front projectElement" data-bind="attr: {'src': info().logoUrl, 'alt': info().name}" />
+            <div class="projectDescriptionWrapper projectElement back" data-bind="style: {backgroundColor: info().backgroundColor}">
+              <p class="projectDescription" data-bind="text: info().description, style: {color: info().letterColor}"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="resume">
+      <div class="sectionTitleWrapper">
+        <h3 class="sectionTitle">Resume</h3>
+      </div>
+      <div class="resumeWrapper">
+        <div class="resumeHeader">
+          <h2>
+            <p class="name">Jordi Bartolomé</p>
+            <p class="carrier">, Web engineer</p>
+          </h2>
+        </div>
+        <div class="resumeSection" id="workExperience">
+          <p class="resumeTitle">Experience</p>
+          <div class="job" data-bind="foreach: jobs">
+            <div class="resumeSectionHeader">
+              <p class="title important" data-bind="text: title"></p>
+              <p class="title"> at </p>
+              <p class="title important" data-bind="text: company"></p>
+              <p class="title"> in </p>
+              <p class="title semiImportant" data-bind="text: city"></p>
+              <div class="date">
+                <p class="title" data-bind="text: startDate"></p>
+                <p class="title"> - </p>
+                <p class="title" data-bind="text: endDate"></p>
+              </div>
+            </div>
+            <div class="resumeDescriptionWrapper">
+              <p class="resumeDescription" data-bind="text: description"></p>
+              <!-- ko foreach: bullets -->
+                <div class="bulletWrapper">
+                  <p class="bulletSymbol">-</p><p class="resumeBullet" data-bind="text: bullet"></p>
+                </div>
+              <!-- /ko -->
+            </div>
+          </div>
+        </div>
+        <div class="resumeSection" id="education">
+          <p class="resumeTitle">Education</p>
+          <div class="education" data-bind="foreach: education">
+            <div class="resumeSectionHeader">
+              <p class="title important" data-bind="text: title"></p>
+              <p class="title"> at </p>
+              <p class="title important" data-bind="text: university"></p>
+              <div class="date">
+                <p class="title" data-bind="text: startDate"></p>
+                <p class="title"> - </p>
+                <p class="title" data-bind="text: endDate"></p>
+              </div>
+            </div>
+            <div class="resumeDescriptionWrapper">
+              <p class="resumeDescription" data-bind="text: description"></p>
+              <!-- ko foreach: bullets -->
+                <p class="resumeBullet" data-bind="text: bullet"></p>
+              <!-- /ko -->
+            </div>
+          </div>
+        </div>
+        <div class="resumeSection" id="education">
+          <p class="resumeTitle">Languages</p>
+          <div class="education" data-bind="foreach: languages">
+            <div class="resumeSectionHeader">
+              <p class="title important" data-bind="text: language"></p><p class="title">: </p>
+              <p class="title" data-bind="text: level"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="hobbies">
+      <div class="sectionTitleWrapper">
+        <h3 class="sectionTitle">Hobbies</h3>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <div class="sectionTitleWrapper">
+        <h3 class="sectionTitle">Contact me</h3>
+      </div>
+      <div class="contactMeOptions">
+        <!-- ko foreach: bullets -->
+          <div class="contactMeOption showTransition" data-bind="event: {click: redirect, mouseover: mouseover, mouseout: mouseout}" >
+            <!-- <img width="100px" height="100px" data-bind="attr: {'src': logoUrl, 'alt': name}" /> -->
+            <i class="fa fa-fw fa-linkedin"></i>
+          </div>
+        <!-- /ko -->
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Google Analytics -->
+  <script>
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  // ga('create', 'UA-45323270-1', 'gamell.io');
+  // ga('send', 'pageview');
+  </script>
+
+</body>
+</html>

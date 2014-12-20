@@ -1,0 +1,147 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@import "../bower_components/font-awesome/less/font-awesome.less";
+
+@fa-font-path: "../fonts/font-awesome";
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "vars.less";
+@import "bootstrap-mods.less";
+@import "impress-mods.less";
+@import "impress-fallback.less";
+@import "splash.less";
+@import "bubbles.less";
+@import "resume-infographic.less";
+@import "resume-formal.less";
+@import "contact.less";
+@import "my-work.less";
+
+body{
+	//-webkit-text-stroke: 1px rgba(0, 0, 0, 0.0);
+	// fix for stupid Chrome Mac not rendering the fonts in a crisp way
+	// http://tanookilabs.com/your-fonts-look-bad-in-chrome-heres-the-fix/
+	-webkit-font-smoothing:antialiased;
+	background-color: @white;
+	opacity: 0;
+
+	&.impress-enabled, &.impress-not-supported{
+		opacity: 1;
+
+		.animate{
+			opacity: 1;
+		}
+	}
+
+}
+
+h1, h2, h3, h4{
+	font-weight: 300;
+}
+
+.animate{ // 0 opacity so it doesn't show the text before the animation
+	opacity: 0;
+}
+
+.code{
+	font-family: "Courier New", Courier, serif;
+}
+
+.page-header{
+
+	z-index: 1;
+    border-bottom: 1px solid @greyLight;
+    padding-bottom: 0;
+    
+    h1{
+		font-size: 13em;
+		color: @greyDark;
+	}
+
+}
+
+.light{
+	opacity: 0.4;
+}
+
+h2{
+	.light{
+		margin-left: 20px;
+	}
+}
+
+a{
+	cursor: pointer;
+}
+
+//general header
+
+.custom-header{
+	
+	position: relative;
+
+	width: 100%;
+
+	top: 0;
+
+	margin: 15px 0 15px 0;
+
+	border-bottom: 1px solid @greyLight;
+
+	h2,h3{
+		display: inline-block;
+		margin:0;
+	}
+	h3{
+		font-size: 18px;
+		margin-top: 10px;
+	}
+	h2{
+		margin-bottom: 5px;
+		font-size: 30px;
+	}
+	.left{
+		float: left;
+		width: 30%;
+	}
+	.right{
+		float: right;
+		width: 30%;
+		text-align:right;
+	}
+	.center{
+		width: 39%;
+		text-align: center;
+	}
+}
+
+// TODO: more styling
+
+.fallback-message{
+	display: none;
+}
+
+.impress-not-supported{
+	.fallback-message{
+		display: block;
+	}
+}
+
+.github-button{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+// make it look nice when we don't activate impress
+.impress-not-loaded, .impress-not-supported{
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-sm) { //
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-md) {
+
+}

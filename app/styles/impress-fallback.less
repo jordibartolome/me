@@ -1,0 +1,56 @@
+@import "vars.less";
+
+body.impress-not-supported{
+	#bubbles, .bubble{
+		display: none;
+	}
+	.step{
+		width: 1200px !important;
+		margin: 0 auto;
+		margin-bottom: 200px;
+		padding: 0 20px 0 20px;
+	}
+
+	// fallback message
+
+	.fallback-message{
+		position: absolute;
+		top: 95px;
+		height: 100px;
+		width: 1200px;
+		left: 50%;
+		margin-left: -600px;
+		font-family: @header-font;
+		background-color: @iosDarkBlue;
+		color: white;
+
+		p{
+			width: @slideWidth;
+			margin: 0 auto;
+			font-size: 22px;
+			line-height: 100px;
+			text-align:center;
+		}
+
+		a{
+			color: white;
+			text-decoration: underline;
+		}
+
+	}
+
+	#wrap{
+		margin-top: 300px;
+	}
+
+	&.mobile{
+		.fallback-message{
+			left:0;
+			margin-left:0;
+			p{
+				font-size: 27px;
+			}
+		}	
+	}
+
+} 
