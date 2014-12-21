@@ -198,7 +198,41 @@ var Me = {};
 				language: "English",
 				level: "Professional working proficiency"
 			}
-		])
+		]);
+
+		self.socialNetworks = ko.observableArray([]);
+		var socialNetworks = [
+			{
+				className: "fa fa-fw fa-at",
+				link: "mailto:jordi.bartolome.guillen@gmail.com"
+			},
+			{
+				className: "fa fa-fw fa-linkedin",
+				link: "https://www.linkedin.com/pub/jordi-bartolom%C3%A9-guill%C3%A9n/35/667/533"
+			},
+			{
+				className: "fa fa-fw fa-github",
+				link: "https://github.com/jordibartolome"
+			},
+			{
+				className: "fa fa-fw fa-twitter",
+				link: "https://www.twitter.com/jordibartolome"
+			},
+			{
+				className: "fa fa-fw fa-youtube",
+				link: "https://www.youtube.com/user/tubasu"
+			},
+			{
+				className: "fa fa-fw fa-google-plus",
+				link: "https://plus.google.com/+JordiBartolom%C3%A9Guill%C3%A9n/posts"
+			}
+			
+
+		];
+
+		socialNetworks.forEach(function (value) {
+			self.socialNetworks.push(new Me.SocialNetworkViewModel(value));
+		});
 
         function scroll () {
             // var backgroundPosition = window.scrollY / 3;
@@ -266,7 +300,14 @@ var Me = {};
 		};
 	};
 
+	Me.SocialNetworkViewModel = function (info) {
+		var self = this;
+		self.info = info;
 
+		self.redirect = function () {
+			window.open(self.info.link, '_blank');
+		};
+	};
 }());
 
 

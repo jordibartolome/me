@@ -37,11 +37,15 @@
   </div>
 
   <div class="wrap">
+    <div id="homeCover">
+    </div>
     <div class="section" id="home">
     </div>
+
     <div class="homeWrapper">
       <h1 id="name">Jordi Bartolomé</h1>
       <h2 id="carrier">Web engineer</h2>
+      <i class="fa fa-fw fa-arrow-down" id="arrowDown"></i>
     </div>
     <div class="section" id="projects">
       <div class="sectionTitleWrapper">
@@ -50,7 +54,7 @@
       <div class="projectsWrapper">
         <div class="projects" data-bind="foreach: projects">
           <div class="project showTransition" data-bind="event: {click: redirect, mouseover: showDescription, mouseout: hideDescription}" >
-            <img width="300" height="100px" class="front projectElement" data-bind="attr: {'src': info().logoUrl, 'alt': info().name}" />
+            <img width="350" class="front projectElement" data-bind="attr: {'src': info().logoUrl, 'alt': info().name}" />
             <div class="projectDescriptionWrapper projectElement back" data-bind="style: {backgroundColor: info().backgroundColor}">
               <p class="projectDescription" data-bind="text: info().description, style: {color: info().letterColor}"></p>
             </div>
@@ -139,10 +143,9 @@
         <h3 class="sectionTitle">Contact me</h3>
       </div>
       <div class="contactMeOptions">
-        <!-- ko foreach: bullets -->
-          <div class="contactMeOption showTransition" data-bind="event: {click: redirect, mouseover: mouseover, mouseout: mouseout}" >
-            <!-- <img width="100px" height="100px" data-bind="attr: {'src': logoUrl, 'alt': name}" /> -->
-            <i class="fa fa-fw fa-linkedin"></i>
+        <!-- ko foreach: socialNetworks -->
+          <div class="contactMeOption opacityTransition" data-bind="event: {click: redirect}" >
+            <i data-bind="attr: {class: info.className}"></i>
           </div>
         <!-- /ko -->
       </div>
