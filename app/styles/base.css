@@ -70,7 +70,7 @@ body {
 }
 
 .navItem.selected {
-	background-color: rgba(255, 0, 0, 0.48);
+	background-color: #df4244;
 	color: rgba(255, 255, 255, 0.89);
 }
 
@@ -144,7 +144,7 @@ body {
 }
 
 .section#projects {
-	background-color: rgba(136, 14, 14, 1);
+	background-color: #df4244;
 	color: white;
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .section#hobbies {
-	background-color: rgba(136, 14, 14, 1);
+	background-color: #df4244;
 	color: white;
 }
 
@@ -345,6 +345,6 @@ body {
 }
 
 .contactMeOption:hover {
-	background-color: rgba(202, 46, 46, 1);
+	background-color: #df4244;
 
 }
