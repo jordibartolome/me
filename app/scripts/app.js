@@ -43,7 +43,7 @@ var Me = {};
 			{
 				name: "Noteflight",
 				logoUrl: "/images/noteflight.png",
-				description: "blablb bffa lbf lbfabf lbasdgfasd fa sdasdjfn dsaf dkf dkj dfaskja dsfkjasd fjkasd fkjasd fkjasd fkjasd faskjdf askdjf askdjf sakjdf sadkjf asdjkf asdkjf asdkjf asdkfja sdfkja sdfkjasd fakjsdf adskjf asdkjf askf askjf adskj askjf asdkjf askjdf asdkjf asdkfja sdfkjas dfkjasd fkjsadfasdfd asfad fad fda fadsfs lbfs lbfd lsdfglbfabf lbasdgfasd fa sdfd asfad fad fda fadsfs lbfs lbfd lsdfg",
+				description: "The future of online music notation",
 				link: "http://www.noteflight.com",
 				backgroundColor: "rgba(231, 229, 206, 0.44)",
 				letterColor: "black"
@@ -51,7 +51,7 @@ var Me = {};
 			{
 				name: "Whatameal",
 				logoUrl: "/images/whatameal.png",
-				description: "blablb bf lbf lbfa lbf lbfabfasdfasfgaf adsfg gads gaf gadg asdgads  asd gdsa gdsagdsa lbfs lbfs lbfd lsdfg",
+				description: "Share and create recipes online",
 				link: "http://www.whatameal.com",
 				backgroundColor: "rgba(229, 93, 42, 0.29)",
 				letterColor: "black"
@@ -59,7 +59,7 @@ var Me = {};
 			{
 				name: "Volotea",
 				logoUrl: "/images/volotea.png",
-				description: "blablb bf lbf lbfa lbf lbfabf lbfs lbfs lbfd lsdfg",
+				description: "A new European airline",
 				link: "http://www.volotea.com/en",
 				backgroundColor: "rgba(63, 9, 66, 0.28)",
 				letterColor: "black"
@@ -67,7 +67,7 @@ var Me = {};
 			{
 				name: "jordibartolome.io",
 				logoUrl: "/images/jordibartolome.png",
-				description: "blablb bf lbf lbfa lbf lbfabf lbfs lbfs lbfd lsdfg",
+				description: "This site!",
 				link: "/",
 				backgroundColor: "#e8d5d5",
 				letterColor: "black"
@@ -75,7 +75,7 @@ var Me = {};
 			{
 				name: "music21",
 				logoUrl: "/images/music21.png",
-				description: "blablb bf lbf lbfa lbf lbfabf lbfs lbfs lbfd lsdfg",
+				description: "A toolkit for computed-aided musicology",
 				link: "http://web.mit.edu/music21/",
 				backgroundColor: "rgba(0, 0, 0, 0.11)",
 				letterColor: "black"
@@ -95,30 +95,33 @@ var Me = {};
 				city: "Boston, MA, United States",
 				startDate: "November 2013",
 				endDate: "today",
-				description: "here the description",
+				description: "Music online editor. HTML5, Javascript, AS3 and CSS.",
 				bullets: [
 					{
-						bullet: "bull 1"
+						bullet: "Development of the HTML5 site. Extensive use of Knockout."
 					},
 					{
-						bullet: "bull 2!!!! akjsdfajksdf afdsjkfadsjkadfs"
+						bullet: "Real time MIDI transcription."
+					},
+					{
+						bullet: "Use of web audio API to improve audio performance."
 					}
 				]
 			},
 			{
-				title: "Web developer",
+				title: "Web consultant",
 				company: "Newshore",
 				link: "http://www.newshore.es",
 				city: "Barcelona, Catalonia",
 				startDate: "May 2012",
 				endDate: "October 2013",
-				description: "here the description",
+				description: "Development of www.volotea.com. A new European airline. Umbraco, .NET, Javascript and CSS.",
 				bullets: [
 					{
-						bullet: "bull 1"
+						bullet: "Development of the CMS using Umbraco."
 					},
 					{
-						bullet: "bull 2!!!! akjsdfajksdf afdsjkfadsjkadfs"
+						bullet: "Creation of Web apps and Windows services."
 					}
 				]
 			},
@@ -129,15 +132,8 @@ var Me = {};
 				city: "Barcelona, Catalonia",
 				startDate: "October 2011",
 				endDate: "May 2012",
-				description: "here the description",
-				bullets: [
-					{
-						bullet: "bull 1"
-					},
-					{
-						bullet: "bull 2!!!! akjsdfajksdf afdsjkfadsjkadfs"
-					}
-				]
+				description: "Development of software for the national police. Visual Basic, Cobol and SQL.",
+				bullets: []
 			},
 			{
 				title: "Researcher",
@@ -146,14 +142,17 @@ var Me = {};
 				city: "Cambridge, MA, United States",
 				startDate: "June 2011",
 				endDate: "September 2011",
-				description: "here the description",
+				description: "Development of the music21 software. Use of Python.",
 				bullets: [
 					{
-						bullet: "bull 1"
+						bullet: "Real time audio detection in Python. Creation of a frequency detector."
 					},
 					{
-						bullet: "bull 2!!!! akjsdfajksdf afdsjkfadsjkadfs"
-					}
+						bullet: "Development of a real time page turner. A musician can play a score while the software turns the pages automatically."
+					},
+					// {
+					// 	bullet: "Implementation "
+					// }
 				]
 			}
 		]);
@@ -164,7 +163,7 @@ var Me = {};
 				university: "Polytechnic University of Catalonia",
 				startDate: "2005",
 				endDate: "2011",
-				description: "bla bla bla v fs fds df fdsfds fdsasdf asd fas dfasdfasdf",
+				description: "Relevant coursework: Programming, Signal Processing, Telematics, Mathematics, Physics and Electronics.",
 				bullets: []
 			},
 			{
@@ -172,7 +171,7 @@ var Me = {};
 				university: "Pompeu Fabra University",
 				startDate: "2011",
 				endDate: "2011",
-				description: "Alignment of the recording of a violin performance with its score",
+				description: "Development of Master’s Thesis titled: 'Alignment of the recording of a violin performance with the corresponding musical score', consisting on the development of a software to process the audio signal and the movement of the bow, in order to find the notes played by a violinist. Advisor: Dr. Xavier Serra.",
 				bullets: []
 			},
 			{
@@ -180,7 +179,7 @@ var Me = {};
 				university: "Conservatori Municipal de Barcelona",
 				startDate: "1999",
 				endDate: "2006",
-				description: "Violin, harmony, orquestra... lots of things!",
+				description: "Violin, harmony, orchestra... lots of years, lots of things!",
 				bullets: []
 			},
 		]);

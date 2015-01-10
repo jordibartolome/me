@@ -155,6 +155,7 @@ body {
 .section#hobbies {
 	background-color: #df4244;
 	color: white;
+	text-align: center;
 }
 
 .section#contact {
@@ -218,7 +219,7 @@ body {
 	vertical-align: middle;
 	display: table-cell;
 	font-family: Arial,sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	cursor: pointer;
 }
 
@@ -262,7 +263,7 @@ body {
 }
 
 .resumeHeader .name {
-	color: rgba(11, 12, 113, 0.97);
+	color: rgba(181, 23, 41, 0.97);
 }
 
 .resumeHeader h2, .resumeHeader p {
