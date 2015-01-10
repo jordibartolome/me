@@ -95,7 +95,7 @@ var Me = {};
 				city: "Boston, MA, United States",
 				startDate: "November 2013",
 				endDate: "today",
-				description: "Music online editor. HTML5, Javascript, AS3 and CSS.",
+				description: "Development of <a href='http://www.noteflight.com' class='regularLink' target='_blank'>Noteflight</a>, a music online editor. HTML5, Javascript, AS3 and CSS.",
 				bullets: [
 					{
 						bullet: "Development of the HTML5 editor. Extensive use of Knockout."
@@ -115,7 +115,7 @@ var Me = {};
 				city: "Barcelona, Catalonia",
 				startDate: "May 2012",
 				endDate: "October 2013",
-				description: "Development of www.volotea.com. A new European airline. Umbraco, .NET, Javascript and CSS.",
+				description: "Development of <a href='http://www.volotea.com' class='regularLink' target='_blank'>Volotea</a>. A new European airline. Umbraco, .NET, Javascript and CSS.",
 				bullets: [
 					{
 						bullet: "Designed part of the architecture of the Content Management System (CMS) and optimized the performance of the web."
@@ -146,13 +146,13 @@ var Me = {};
 				city: "Cambridge, MA, United States",
 				startDate: "June 2011",
 				endDate: "September 2011",
-				description: "Development of the music21 software. Use of Python.",
+				description: "Development of <a href='http://web.mit.edu/music21/' class='regularLink' target='_blank'>music21</a>. Developed in Python.",
 				bullets: [
 					{
 						bullet: "Participated in the “music21” project, a set of tools for helping scholars and other active listeners answer questions about music quickly and simply."
 					},
 					{
-						bullet: "Developed a software that detects in real time, through audio and signal processing techniques, the note that a violinist plays and shows the score properly. Advisor: Dr. Michael Scott Cuthbert."
+						bullet: "Developed a software that detects, in real time, through audio and signal processing techniques, the note that a musician plays and shows the score properly. Advisor: Dr. Michael Scott Cuthbert."
 					},
 					{
 						bullet: "The results of this project were published in 'New applications to Score Following and feature extraction beyond MIDI', by J. Bartolomé and M.S. Cuthbert (NIPS 2011 – Music and Machine Learning Workshop. December 2011, Granada, Spain)"
