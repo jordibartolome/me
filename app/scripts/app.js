@@ -69,7 +69,7 @@ var Me = {};
 				logoUrl: "/images/jordibartolome.png",
 				description: "blablb bf lbf lbfa lbf lbfabf lbfs lbfs lbfd lsdfg",
 				link: "/",
-				backgroundColor: "red",
+				backgroundColor: "#e8d5d5",
 				letterColor: "black"
 			},
 			{
