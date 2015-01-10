@@ -1,16 +1,9 @@
-// Generated on 2013-10-21 using generator-bootstrap-less 3.0.3
 'use strict';
 
 var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
-
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to match all subfolders:
-// 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
   // load all grunt tasks
@@ -24,22 +17,6 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     yeoman: yeomanConfig,
-    ftpush: {
-      build: {
-        auth: {
-          // Create a .ftppass file in the root directory of your app with the FTP credentials.
-          // Reference it from authKey and change the host and port here.
-          // more info: https://github.com/inossidabile/grunt-ftpush
-          host: 'wtfoto.net',
-          port: 21,
-          authKey: 'wtfoto'
-        },
-        src: 'dist',
-        dest: '/gamell.io',
-        exclusions: ['dist/**/.DS_Store', 'distt/**/Thumbs.db', 'dist/tmp'],
-        keep: [] /*'/important/images/at/server/*.jpg'*/
-      }
-    },
     devcode: {
       options: {
         html: false,        // html files parsing?
@@ -229,9 +206,7 @@ module.exports = function (grunt) {
               '<%= yeoman.app %>/bower_components/d3/d3.js', 
               '<%= yeoman.app %>/bower_components/queue-async/queue.js', 
               '<%= yeoman.app %>/bower_components/topojson/topojson.js',
-              '<%= yeoman.app %>/scripts/infographics/sunburst.js',
-              '<%= yeoman.app %>/scripts/infographics/world-map.js'],
-              //'<%= yeoman.app %>/scripts/infographics/timeline.js'],
+              '<%= yeoman.app %>/scripts/infographics/sunburst.js'],
         dest: '.tmp/concat/js/deferred.js'
       },
     },
@@ -278,15 +253,6 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
-          //removeCommentsFromCDATA: true,
-          // https://github.com/yeoman/grunt-usemin/issues/44
-          //collapseWhitespace: true,
-          //collapseBooleanAttributes: true,
-          //removeAttributeQuotes: true,
-          //removeRedundantAttributes: true,
-          //useShortDoctype: true,
-          //removeEmptyAttributes: true,
-          //removeOptionalTags: true
         },
         files: [{
           expand: true,
@@ -308,7 +274,6 @@ module.exports = function (grunt) {
             'scripts/*.json',
             'fonts/{,*/}*.*',
             'media/*.*',
-            'ie8-warning/*.*',
             '.htaccess',
             'images/{,*/}*.{webp,gif}'
           ]
