@@ -67,7 +67,7 @@ var Me = {};
 			{
 				name: "jordibartolome.io",
 				logoUrl: "/images/jordibartolome.png",
-				description: "This site!",
+				description: "This site! Feel free to fork it on github.",
 				link: "/",
 				backgroundColor: "#e8d5d5",
 				letterColor: "black"
@@ -98,10 +98,10 @@ var Me = {};
 				description: "Music online editor. HTML5, Javascript, AS3 and CSS.",
 				bullets: [
 					{
-						bullet: "Development of the HTML5 site. Extensive use of Knockout."
+						bullet: "Development of the HTML5 editor. Extensive use of Knockout."
 					},
 					{
-						bullet: "Real time MIDI transcription."
+						bullet: "Real time music transcription."
 					},
 					{
 						bullet: "Use of web audio API to improve audio performance."
@@ -118,10 +118,10 @@ var Me = {};
 				description: "Development of www.volotea.com. A new European airline. Umbraco, .NET, Javascript and CSS.",
 				bullets: [
 					{
-						bullet: "Development of the CMS using Umbraco."
+						bullet: "Designed part of the architecture of the Content Management System (CMS) and optimized the performance of the web."
 					},
 					{
-						bullet: "Creation of Web apps and Windows services."
+						bullet: "Also designed different windows services and web services related to the website."
 					}
 				]
 			},
@@ -133,7 +133,11 @@ var Me = {};
 				startDate: "October 2011",
 				endDate: "May 2012",
 				description: "Development of software for the national police. Visual Basic, Cobol and SQL.",
-				bullets: []
+				bullets: [
+					{
+						bullet: "Software analyzer and developer of Business Intelligence applications for the national police department."
+					}
+				]
 			},
 			{
 				title: "Researcher",
@@ -145,14 +149,17 @@ var Me = {};
 				description: "Development of the music21 software. Use of Python.",
 				bullets: [
 					{
-						bullet: "Real time audio detection in Python. Creation of a frequency detector."
+						bullet: "Participated in the “music21” project, a set of tools for helping scholars and other active listeners answer questions about music quickly and simply."
 					},
 					{
-						bullet: "Development of a real time page turner. A musician can play a score while the software turns the pages automatically."
+						bullet: "Developed a software that detects in real time, through audio and signal processing techniques, the note that a violinist plays and shows the score properly. Advisor: Dr. Michael Scott Cuthbert."
 					},
-					// {
-					// 	bullet: "Implementation "
-					// }
+					{
+						bullet: "The results of this project were published in 'New applications to Score Following and feature extraction beyond MIDI', by J. Bartolomé and M.S. Cuthbert (NIPS 2011 – Music and Machine Learning Workshop. December 2011, Granada, Spain)"
+					},
+					{
+						bullet: "Example of some developed applications <a class='regularLink' href='http://www.youtube.com/watch?v=h48hSl6syyw' target='_blank'>here</a>."
+					}
 				]
 			}
 		]);
@@ -182,6 +189,29 @@ var Me = {};
 				description: "Violin, harmony, orchestra... lots of years, lots of things!",
 				bullets: []
 			},
+		]);
+
+		self.skills = ko.observableArray([
+			{
+				group: "Web Technologies",
+				className: "webTechnologies skillsGroupWrapper",
+				elements: ["HTML5", "CSS", "Web Services"]
+			},
+			{
+				group: "Javascript Technologies",
+				className: "jsTechnologies skillsGroupWrapper",
+				elements: ["Javascript", "jQuery", "Knockout", "AJAX", "Web audio API"]
+			},
+			{
+				group: "Programming Languages",
+				className: "programmingLanguages skillsGroupWrapper",
+				elements: ["Python", "Django", ".NET", "Java", "C#"]
+			},
+			{
+				group: "Others",
+				className: "others skillsGroupWrapper",
+				elements: ["Jenkins", "SEO"]
+			}
 		]);
 
 		self.languages = ko.observableArray([

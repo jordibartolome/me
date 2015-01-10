@@ -91,7 +91,7 @@
               <p class="resumeDescription" data-bind="text: description"></p>
               <!-- ko foreach: bullets -->
                 <div class="bulletWrapper">
-                  <p class="bulletSymbol">-</p><p class="resumeBullet" data-bind="text: bullet"></p>
+                  <p class="bulletSymbol">-</p><p class="resumeBullet" data-bind="html: bullet"></p>
                 </div>
               <!-- /ko -->
             </div>
@@ -115,6 +115,14 @@
               <!-- ko foreach: bullets -->
                 <p class="resumeBullet" data-bind="text: bullet"></p>
               <!-- /ko -->
+            </div>
+          </div>
+        </div>
+        <div class="resumeSection" id="education">
+          <p class="resumeTitle">Computer Skills</p>
+          <div class="skills" data-bind="foreach: skills">
+            <div data-bind="attr: {'class': className}, foreach: elements">
+              <p class="skill" data-bind="text: $data"></p>
             </div>
           </div>
         </div>
@@ -149,7 +157,10 @@
           </div>
         <!-- /ko -->
       </div>
+    </div>
 
+    <div class="footer">
+      <span>The project is Open Source (MIT License) so feel free to fork the project or get any inspiration in <a class="regularLink" href="https://github.com/jordibartolome/me" target="_blank">Github</a></span>
     </div>
   </div>
 

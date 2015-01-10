@@ -19,6 +19,20 @@ body {
     font-weight: 400;
 }
 
+.regularLink, .regularLink:focus {
+	color: rgb(223, 66, 68);
+	text-decoration: none!important;
+
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.regularLink:hover {
+	color: rgb(155, 12, 14)!important;
+}
+
 .navBar {
 	width: 100%;
 	height: 40px;
@@ -218,7 +232,7 @@ body {
 .projectDescription {
 	vertical-align: middle;
 	display: table-cell;
-	font-family: Arial,sans-serif;
+	font-family: 'Source Sans Pro',sans-serif;
 	font-size: 20px;
 	cursor: pointer;
 }
@@ -245,8 +259,6 @@ body {
 	-o-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 }
-
-
 
 .resumeWrapper {
 	width: 80%;
@@ -313,14 +325,22 @@ body {
 .resumeDescriptionWrapper .bulletWrapper {
 	display: block;
 	padding-left: 10px;
+	position: relative;
 }
 
 .resumeDescriptionWrapper .resumeBullet {
 	padding-left: 5px;
 }
 
-.resumeDescriptionWrapper .bulletSymbol, .resumeDescriptionWrapper .resumeBullet {
+.resumeDescriptionWrapper .bulletSymbol {
 	display: inline-block;
+	position: absolute;
+	top: 0px;
+}
+
+.resumeDescriptionWrapper .resumeBullet {
+	display: inline-block;
+	top: 0px;
 }
 
 .resumeDescriptionWrapper .resumeDescription {
@@ -348,4 +368,59 @@ body {
 .contactMeOption:hover {
 	background-color: #df4244;
 
+}
+
+.skillsGroupWrapper {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.skillsGroupWrapper .skill {
+	display: inline-block;
+	margin-right: 1px;
+	background-color: rgb(221, 218, 218);
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+}
+
+.skillsGroupWrapper.webTechnologies:hover .skill {
+	background-color: rgb(223, 66, 68);
+	color: white;
+}
+
+.skillsGroupWrapper.jsTechnologies:hover .skill {
+	background-color: rgb(232, 185, 100);
+	color: white;
+}
+
+.skillsGroupWrapper.programmingLanguages:hover .skill {
+	background-color: rgb(125, 205, 112);
+	color: white;
+}
+
+.skillsGroupWrapper.others:hover .skill {
+	background-color: rgb(122, 119, 147);
+	color: white;
+}
+
+.footer {
+	height: 50px;
+	color: white;
+	background: #1B1B1B;
+	text-align: center;
+	font-family: 'Source Sans Pro',sans-serif;
+	display: table;
+	width: 100%;
+}
+
+.footer span{
+	vertical-align: middle;
+	display: table-cell;
 }
