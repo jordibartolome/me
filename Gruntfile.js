@@ -24,22 +24,6 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     yeoman: yeomanConfig,
-    ftpush: {
-      build: {
-        auth: {
-          // Create a .ftppass file in the root directory of your app with the FTP credentials.
-          // Reference it from authKey and change the host and port here.
-          // more info: https://github.com/inossidabile/grunt-ftpush
-          host: 'wtfoto.net',
-          port: 21,
-          authKey: 'wtfoto'
-        },
-        src: 'dist',
-        dest: '/gamell.io',
-        exclusions: ['dist/**/.DS_Store', 'distt/**/Thumbs.db', 'dist/tmp'],
-        keep: [] /*'/important/images/at/server/*.jpg'*/
-      }
-    },
     devcode: {
       options: {
         html: false,        // html files parsing?
