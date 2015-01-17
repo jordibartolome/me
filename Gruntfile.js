@@ -348,17 +348,33 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
     }
 
+    // grunt.task.run([
+    //   'clean:server',
+    //   'devcode:server',
+    //   'coffee',
+    //   'recess',
+    //   'copy:server',
+    //   'livereload-start',
+    //   'connect:livereload',
+    //   'open',
+    //   'watch'
+    // ]);
+
     grunt.task.run([
-      'clean:server',
-      'devcode:server',
-      'coffee',
-      'recess',
-      'copy:server',
-      'livereload-start',
-      'connect:livereload',
-      'open',
-      'watch'
-    ]);
+    'clean:dist',
+    'copy:server',
+    'useminPrepare',
+    'concurrent',
+    'cssmin',
+    'concat',
+    'devcode:dist',
+    'uglify',
+    'copy',
+    'rev',
+    'usemin'
+  ]);
+
+  
   });
 
   grunt.registerTask('heroku:development', 'clean:server less mincss');
