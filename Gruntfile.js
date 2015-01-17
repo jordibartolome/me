@@ -1,6 +1,5 @@
 'use strict';
 
-var lrSnippet = require('grunt-contrib-livereload/lib/utils').livereloadSnippet;
 var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
@@ -60,7 +59,7 @@ module.exports = function (grunt) {
           '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ],
-        tasks: ['devcode:server','livereload']
+        tasks: ['devcode:server']
       }
     },
     connect: {
@@ -68,17 +67,6 @@ module.exports = function (grunt) {
         port: 9000,
         // change this to '0.0.0.0' to access the server from outside
         hostname: '0.0.0.0'
-      },
-      livereload: {
-        options: {
-          middleware: function (connect) {
-            return [
-              lrSnippet,
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, 'app')
-            ];
-          }
-        }
       },
       test: {
         options: {
@@ -319,8 +307,6 @@ module.exports = function (grunt) {
       'coffee',
       'recess',
       'copy:server',
-      'livereload-start',
-      'connect:livereload',
       'open',
       'watch'
     ]);
@@ -362,3 +348,4 @@ module.exports = function (grunt) {
     'build'
   ]);
 };
+]
