@@ -362,7 +362,19 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('heroku:development', 'clean:server less mincss');
-  grunt.registerTask('heroku:production', 'clean:server');
+  grunt.registerTask('heroku:production', [
+    'clean:dist',
+    'copy:server',
+    'useminPrepare',
+    'concurrent',
+    'cssmin',
+    'concat',
+    'devcode:dist',
+    'uglify',
+    'copy',
+    'rev',
+    'usemin'
+  ]);
   
   grunt.registerTask('test', [
     'clean:server',
