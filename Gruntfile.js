@@ -361,6 +361,9 @@ module.exports = function (grunt) {
     ]);
   });
 
+  grunt.registerTask('heroku:development', 'clean less mincss');
+  grunt.registerTask('heroku:production', 'clean less mincss uglify');
+  
   grunt.registerTask('test', [
     'clean:server',
     'coffee',
