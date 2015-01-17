@@ -170,8 +170,8 @@ var Detector = {};
 	        microphoneSource.connect(filter);
 	        filter.connect(analyserNode);
 
-	        //var res = 2048;
-	        var res = 4096;
+	        var res = 2048;
+	        //var res = 4096;
 
 	        var javascriptNodeAutocorrelation = null;
 	        var javascriptNode = null;
