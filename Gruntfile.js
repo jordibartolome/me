@@ -308,6 +308,12 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>/bower_components/bootstrap/fonts/',
           dest: '<%= yeoman.app %>/fonts/glyphicons',
           src: ['*']
+        }, {
+          expand: true,
+          dot: true,
+          cwd: '<%= yeoman.app %>/fonts/font-awesome-package/',
+          dest: '<%= yeoman.dist %>/fonts/font-awesome-package',
+          src: ['*']
         }]
       }
     },
@@ -328,33 +334,33 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
     }
 
-    grunt.task.run([
-      'clean:server',
-      'devcode:server',
-      'coffee',
-      'recess',
-      'copy:server',
-      'livereload-start',
-      'connect:livereload',
-      'open',
-      'watch'
-    ]);
+    // grunt.task.run([
+    //   'clean:server',
+    //   'devcode:server',
+    //   'coffee',
+    //   'recess',
+    //   'copy:server',
+    //   'livereload-start',
+    //   'connect:livereload',
+    //   'open',
+    //   'watch'
+    // ]);
 
   // ONLY FOR BUILDING TESTING IN LOCAL
-  //   grunt.task.run([
-  //   'clean:dist',
-  //   'copy:server',
-  //   'useminPrepare',
-  //   'concurrent',
-  //   'cssmin',
-  //   'concat',
-  //   'devcode:dist',
-  //   'uglify',
-  //   'copy',
-  //   'rev',
-  //   'usemin',
-  //   'open'
-  // ]);
+    grunt.task.run([
+    'clean:dist',
+    'copy:server',
+    'useminPrepare',
+    'concurrent',
+    'cssmin',
+    'concat',
+    'devcode:dist',
+    'uglify',
+    'copy',
+    'rev',
+    'usemin',
+    'open'
+  ]);
 
   
   });
