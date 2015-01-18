@@ -183,9 +183,7 @@ module.exports = function (grunt) {
         files: {
           src: [
             '<%= yeoman.dist %>/scripts/{,vendor/}*.js',
-            '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp}',
-            '<%= yeoman.dist %>/fonts/{,*/}*.*'
+            '<%= yeoman.dist %>/styles/{,*/}*.css'
           ]
         }
       }
@@ -292,9 +290,8 @@ module.exports = function (grunt) {
             'scripts/*.json',
             'fonts/{,*/}*.*',
             'media/*.*',
-            'ie8-warning/*.*',
             '.htaccess',
-            'images/{,*/}*.{webp,gif}'
+            'images/*.*'
           ]
         }]
       },
@@ -318,7 +315,6 @@ module.exports = function (grunt) {
       dist: [
         'coffee',
         'recess',
-        'imagemin',
         'svgmin',
         'htmlmin'
       ]
@@ -332,31 +328,33 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
     }
 
-    // grunt.task.run([
-    //   'clean:server',
-    //   'devcode:server',
-    //   'coffee',
-    //   'recess',
-    //   'copy:server',
-    //   'livereload-start',
-    //   'connect:livereload',
-    //   'open',
-    //   'watch'
-    // ]);
-
     grunt.task.run([
-    'clean:dist',
-    'copy:server',
-    'useminPrepare',
-    'concurrent',
-    'cssmin',
-    'concat',
-    'devcode:dist',
-    'uglify',
-    'copy',
-    'rev',
-    'usemin'
-  ]);
+      'clean:server',
+      'devcode:server',
+      'coffee',
+      'recess',
+      'copy:server',
+      'livereload-start',
+      'connect:livereload',
+      'open',
+      'watch'
+    ]);
+
+  // ONLY FOR BUILDING TESTING IN LOCAL
+  //   grunt.task.run([
+  //   'clean:dist',
+  //   'copy:server',
+  //   'useminPrepare',
+  //   'concurrent',
+  //   'cssmin',
+  //   'concat',
+  //   'devcode:dist',
+  //   'uglify',
+  //   'copy',
+  //   'rev',
+  //   'usemin',
+  //   'open'
+  // ]);
 
   
   });
