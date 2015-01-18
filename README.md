@@ -1,7 +1,7 @@
 jordibartolome.net
 =========
 
-See it live at <a href="http://jordibartolome.net">jordibartolome.net</a>
+See it live at <a href="http://jordibartolome.me">jordibartolome.me</a>
 
 This work is distributed under the MIT License.
 

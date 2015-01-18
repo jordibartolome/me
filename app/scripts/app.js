@@ -65,7 +65,7 @@ var Me = {};
 				letterColor: "black"
 			},
 			{
-				name: "jordibartolome.io",
+				name: "jordibartolome.me",
 				logoUrl: "/images/jordibartolome.png",
 				description: "This site! Feel free to fork it on github.",
 				link: "/",
