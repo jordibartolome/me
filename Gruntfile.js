@@ -328,33 +328,33 @@ module.exports = function (grunt) {
       return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
     }
 
-    // grunt.task.run([
-    //   'clean:server',
-    //   'devcode:server',
-    //   'coffee',
-    //   'recess',
-    //   'copy:server',
-    //   'livereload-start',
-    //   'connect:livereload',
-    //   'open',
-    //   'watch'
-    // ]);
-
-  // ONLY FOR BUILDING TESTING IN LOCAL
     grunt.task.run([
-    'clean:dist',
-    'copy:server',
-    'useminPrepare',
-    'concurrent',
-    'cssmin',
-    'concat',
-    'devcode:dist',
-    'uglify',
-    'copy',
-    'rev',
-    'usemin',
-    'open'
-  ]);
+      'clean:server',
+      'devcode:server',
+      'coffee',
+      'recess',
+      'copy:server',
+      'livereload-start',
+      'connect:livereload',
+      'open',
+      'watch'
+    ]);
+
+  // // ONLY FOR BUILDING TESTING IN LOCAL
+  //   grunt.task.run([
+  //   'clean:dist',
+  //   'copy:server',
+  //   'useminPrepare',
+  //   'concurrent',
+  //   'cssmin',
+  //   'concat',
+  //   'devcode:dist',
+  //   'uglify',
+  //   'copy',
+  //   'rev',
+  //   'usemin',
+  //   'open'
+  // ]);
 
   
   });
