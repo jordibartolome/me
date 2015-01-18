@@ -243,20 +243,18 @@ var Me = {};
 				className: "fa fa-fw fa-github",
 				link: "https://github.com/jordibartolome"
 			},
-			{
-				className: "fa fa-fw fa-twitter",
-				link: "https://www.twitter.com/jordibartolome"
-			},
+			// {
+			// 	className: "fa fa-fw fa-twitter",
+			// 	link: "https://www.twitter.com/jordibartolome"
+			// },
 			{
 				className: "fa fa-fw fa-youtube",
 				link: "https://www.youtube.com/user/tubasu"
 			},
-			{
-				className: "fa fa-fw fa-google-plus",
-				link: "https://plus.google.com/+JordiBartolom%C3%A9Guill%C3%A9n/posts"
-			}
-			
-
+			// {
+			// 	className: "fa fa-fw fa-google-plus",
+			// 	link: "https://plus.google.com/+JordiBartolom%C3%A9Guill%C3%A9n/posts"
+			// }
 		];
 
 		socialNetworks.forEach(function (value) {
