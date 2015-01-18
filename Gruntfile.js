@@ -288,7 +288,7 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'scripts/*.json',
-            'fonts/{,*/}*.*',
+            'fonts/{,*/}{,*/}*.*',
             'media/*.*',
             '.htaccess',
             'images/*.*'
@@ -307,12 +307,6 @@ module.exports = function (grunt) {
           dot: true,
           cwd: '<%= yeoman.app %>/bower_components/bootstrap/fonts/',
           dest: '<%= yeoman.app %>/fonts/glyphicons',
-          src: ['*']
-        }, {
-          expand: true,
-          dot: true,
-          cwd: '<%= yeoman.app %>/fonts/font-awesome-package/',
-          dest: '<%= yeoman.dist %>/fonts/font-awesome-package',
           src: ['*']
         }]
       }
