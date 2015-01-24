@@ -205,12 +205,12 @@ var Me = {};
 			{
 				group: "Programming Languages",
 				className: "programmingLanguages skillsGroupWrapper",
-				elements: ["Python", "Django", ".NET", "Java", "C#"]
+				elements: ["Python", "Django", ".NET", "Java", "C#", "Ruby on Rails"]
 			},
 			{
 				group: "Others",
 				className: "others skillsGroupWrapper",
-				elements: ["Jenkins", "SEO"]
+				elements: ["Git", "Jenkins", "SEO"]
 			}
 		]);
 
