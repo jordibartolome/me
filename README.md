@@ -8,7 +8,7 @@ This work is distributed under the MIT License.
 Description
 -----------
 
-This is a plain HTML, JS and CSS website which I use as my resume and portfolio online.
+This is a plain HTML, JS and CSS website which I use as my resume and online portfolio.
 
 Feel free to fork it!
 
