@@ -89,22 +89,25 @@ var Me = {};
 
 		self.jobs = ko.observableArray([
 			{
-				title: "Web developer",
+				title: "Principal Software Engineer",
 				company: "Noteflight",
 				link: "http://www.noteflight.com",
-				city: "Boston, MA, United States",
+				city: "Somerville, MA, United States",
 				startDate: "November 2013",
 				endDate: "today",
-				description: "Development of <a href='http://www.noteflight.com' class='regularLink' target='_blank'>Noteflight</a>, a music online editor. HTML5, Javascript, AS3 and CSS.",
+				description: "<a href='http://www.noteflight.com' class='regularLink' target='_blank'>Noteflight</a> is a heavy Javascript app to write musical scores online. Worked on the full scope of Noteflight's software stack, from the frontend to the backend. Led and mentored a team of developers and worked on the design and prioritization of the projects.",
 				bullets: [
 					{
-						bullet: "Development of the HTML5 editor. Extensive use of Knockout."
+						bullet: "Optimization of the heavy Javascript Noteflight Editor, improving loading and editing algorithms. "
 					},
 					{
-						bullet: "Real time music transcription."
+						bullet: "Implemented React/Redux."
 					},
 					{
-						bullet: "Use of web audio API to improve audio performance."
+						bullet: "Development of a real time audio transcription using Machine Learning with BrainJS."
+					},
+					{
+						bullet: "Built a whole new commerce system."
 					}
 				]
 			},
@@ -193,19 +196,19 @@ var Me = {};
 
 		self.skills = ko.observableArray([
 			{
-				group: "Web Technologies",
-				className: "webTechnologies skillsGroupWrapper",
-				elements: ["HTML5", "CSS", "Web Services"]
-			},
-			{
 				group: "Javascript Technologies",
 				className: "jsTechnologies skillsGroupWrapper",
-				elements: ["Javascript", "jQuery", "Knockout", "AJAX", "Web audio API"]
+				elements: ["Javascript", "React/Redux", "jQuery", "Knockout", "AJAX", "Web audio API", "BrainJS"]
+			},
+			{
+				group: "Web Technologies",
+				className: "webTechnologies skillsGroupWrapper",
+				elements: ["HTML5", "Webpack", "CSS", "ElasticSearch", "AWS", "Web Services"]
 			},
 			{
 				group: "Programming Languages",
 				className: "programmingLanguages skillsGroupWrapper",
-				elements: ["Python", "Django", ".NET", "Java", "C#", "Ruby on Rails"]
+				elements: ["Ruby on Rails", "Python", "Django", ".NET", "Java", "C#"]
 			},
 			{
 				group: "Others",
