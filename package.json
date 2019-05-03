@@ -26,7 +26,8 @@
     "grunt-svgmin": "0.2.0",
     "grunt-usemin": "0.1.12",
     "less": "*",
-    "matchdep": "0.1.2"
+    "matchdep": "0.1.2",
+    "natives": "^1.1.6"
   },
   "devDependencies": {
     "grunt": "0.4.1",
