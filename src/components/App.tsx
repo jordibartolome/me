@@ -24,7 +24,7 @@ export default class App extends Component {
     return (
       <div className="section" id="projects">
         <div className="sectionTitleWrapper">
-          <h3 className="sectionTitle">Some of the projects I worked on</h3>
+          <h3 className="sectionTitle">Some projects I worked on</h3>
         </div>
         <div className="projects">{projectsJsx}</div>
       </div>
@@ -89,9 +89,11 @@ export default class App extends Component {
         <div className="section" id="home"></div>
 
         <div className="homeWrapper">
-          <h1 id="name">Jordi Bartolomé</h1>
-          <h2 id="jobTitle">Software developer</h2>
-          <i className="fa fa-fw fa-arrow-down" id="arrowDown"></i>
+          <div className="info">
+            <h1 id="name">Jordi Bartolomé</h1>
+            <h2 id="jobTitle">Software developer</h2>
+            <i className="fa fa-fw fa-arrow-down" id="arrowDown"></i>
+          </div>
         </div>
 
         {this.renderProjects()}

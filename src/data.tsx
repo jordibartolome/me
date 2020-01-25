@@ -5,54 +5,68 @@ const DATE_FORMAT = "dd-MM-yyyy";
 
 export const PROJECTS: IProject[] = [
   {
+    name: "Amazon Web Services",
+    logoUrl: "/images/aws.png",
+    description: "AWS Detective, a new cybersecurity service.",
+    link: "https://www.aws.com"
+  },
+  {
     name: "Noteflight",
     logoUrl: "/images/noteflight.png",
-    description: "The future of online music notation",
-    link: "http://www.noteflight.com",
-    backgroundColor: "rgba(231, 229, 206, 0.44)",
-    letterColor: "black"
+    description:
+      "The future of online music notation. An online music notation editor to create, transcribe and play classical music.",
+    link: "http://www.noteflight.com"
   },
   {
     name: "Whatameal",
     logoUrl: "/images/whatameal.png",
-    description: "Share and create recipes online",
-    link: "http://www.whatameal.com",
-    backgroundColor: "rgba(229, 93, 42, 0.29)",
-    letterColor: "black"
+    description: "Share and create recipes online.",
+    link: "https://www.whatameal.com"
   },
   {
     name: "Volotea",
     logoUrl: "/images/volotea.png",
-    description: "A new European airline",
-    link: "http://www.volotea.com/en",
-    backgroundColor: "rgba(63, 9, 66, 0.28)",
-    letterColor: "black"
+    description: "A new European airline. ",
+    link: "https://www.volotea.com/en"
   },
   {
     name: "jordibartolome.me",
     logoUrl: "/images/jordibartolome.png",
     description: "This site! Feel free to fork it on github.",
-    link: "/",
-    backgroundColor: "#e8d5d5",
-    letterColor: "black"
+    link: "/"
   },
   {
     name: "music21",
     logoUrl: "/images/music21.png",
-    description: "A toolkit for computed-aided musicology",
-    link: "http://web.mit.edu/music21/",
-    backgroundColor: "rgba(0, 0, 0, 0.11)",
-    letterColor: "black"
+    description:
+      "A python based toolkit for computed-aided musicology. It has never been easier to analyze music.",
+    link: "http://web.mit.edu/music21/"
   }
 ];
 
 export const JOBS: IJob[] = [
   {
+    title: "Front End Engineer",
+    company: "Amazon Web Services",
+    link: "https://www.aws.com",
+    city: "Cambridge, MA, United States",
+    startDate: DateTime.fromFormat("22-07-2019", DATE_FORMAT),
+    description:
+      "Worked on the development and release of <a href='https://www.aws.com' class='regularLink' target='_blank'>AWS Detective</a>, a new AWS cybersecurity service. ",
+    bullets: [
+      // "Optimization of the heavy Javascript Noteflight Editor, improving loading and editing algorithms. ",
+      // "Implemented React/Redux.",
+      // "Development of a real time audio transcription using Machine Learning with BrainJS.",
+      // "Built a whole new commerce system."
+    ]
+  },
+  {
     title: "Principal Software Engineer",
     company: "Noteflight",
-    link: "http://www.noteflight.com",
+    link: "https://www.noteflight.com",
     city: "Somerville, MA, United States",
     startDate: DateTime.fromFormat("04-11-2013", DATE_FORMAT),
+    endDate: DateTime.fromFormat("19-07-2019", DATE_FORMAT),
     description:
       "<a href='http://www.noteflight.com' class='regularLink' target='_blank'>Noteflight</a> is a heavy Javascript app to write musical scores online. Worked on the full scope of Noteflight's software stack, from the frontend to the backend. Led and mentored a team of developers and worked on the design and prioritization of the projects.",
     bullets: [

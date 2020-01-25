@@ -134,21 +134,25 @@ body {
   text-align: center;
   color: white;
   font-family: "homeFont";
-  padding-top: 250px;
 
-  #name {
-    font-size: 48px;
-    font-weight: bold;
-    padding-bottom: 10px;
-  }
+  .info {
+    background-color: #0000006e;
+    padding-top: 250px;
 
-  #jobTitle {
-    font-size: 32px;
-  }
+    #name {
+      font-size: 48px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
 
-  #arrowDown {
-    font-size: 35px;
-    margin-top: 120px;
+    #jobTitle {
+      font-size: 32px;
+    }
+
+    #arrowDown {
+      font-size: 35px;
+      margin-top: 120px;
+    }
   }
 }
 
@@ -160,6 +164,7 @@ body {
 
   &#resume {
     background-color: #f9f9f9;
+    padding-bottom: 40px;
   }
 
   &#hobbies {
@@ -174,6 +179,7 @@ body {
 
   &#contact {
     background-color: #f9f9f9;
+    padding-bottom: 30px;
   }
 
   .sectionTitleWrapper {
@@ -244,7 +250,7 @@ body {
         display: table-cell;
         font-family: "Source Sans Pro", sans-serif;
         font-size: 20px;
-        cursor: pointer;
+        text-align: left;
       }
     }
 

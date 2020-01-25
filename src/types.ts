@@ -5,8 +5,6 @@ export interface IProject {
   logoUrl: string;
   description: string;
   link: string;
-  backgroundColor: string;
-  letterColor: string;
 }
 
 export interface IJob {
