@@ -1,18 +1,39 @@
-jordibartolome.me
-=========
+# node-js-getting-started
 
-See it live at <a href="http://jordibartolome.me">jordibartolome.me</a>
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-This work is distributed under the MIT License.
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-Description
------------
+## Running Locally
 
-This is a plain HTML, JS and CSS website which I use as my resume and online portfolio.
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
-Feel free to fork it!
+```sh
+$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
 
-Usage
------
+Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-I used `yeoman`, `grunt` and `bower` to create and develop this project.
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)

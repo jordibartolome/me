@@ -1,0 +1,428 @@
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "homeFont";
+  src: url(/fonts/Restaurant.woff) format("truetype");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/fonts/source-sans-pro/sourcesanspro-light-webfont.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/source-sans-pro/sourcesanspro-light-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/fonts.svg#source_sans_prolight") format("svg"),
+    /* Legacy iOS and Chrome */
+      url("/fonts/source-sans-pro/sourcesanspro-light-webfont.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("/fonts/source-sans-pro/sourcesanspro-light-webfont.ttf")
+      format("truetype"); /* Safari, Android, iOS */
+
+  font-style: normal;
+  font-weight: 400;
+}
+
+.regularLink {
+  color: rgb(223, 66, 68);
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+
+  &:focus {
+    color: rgb(223, 66, 68);
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+  }
+
+  &:hover {
+    color: rgb(155, 12, 14) !important;
+  }
+}
+
+.navBar {
+  width: 100%;
+  height: 40px;
+  display: block;
+  color: #999;
+  background-color: #1b1b1b;
+  font-family: Helvetica;
+  margin: 0 auto;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  overflow-y: hidden;
+
+  transition: all 0.3s ease;
+
+  &.top {
+    height: 57px;
+
+    .navItem {
+      font-size: 19px;
+
+      .navItemText {
+        top: 25px;
+      }
+
+      .wrap .section {
+        min-height: 300px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .navItem {
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 100px;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .navItemText {
+      top: 13px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      background-color: rgba(255, 0, 0, 0.24);
+    }
+
+    &.selected {
+      background-color: #df4244;
+      color: rgba(255, 255, 255, 0.89);
+    }
+  }
+}
+
+.wrap {
+  #homeCover {
+    position: fixed;
+    background: black;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #homeCover {
+    z-index: -1;
+  }
+
+  #home {
+    background-image: url("/images/homeBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.6;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+  }
+}
+
+.homeWrapper {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "homeFont";
+  padding-top: 250px;
+
+  #name {
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+  #jobTitle {
+    font-size: 32px;
+  }
+
+  #arrowDown {
+    font-size: 35px;
+    margin-top: 120px;
+  }
+}
+
+.section {
+  &#projects {
+    background-color: #df4244;
+    color: white;
+  }
+
+  &#resume {
+    background-color: #f9f9f9;
+  }
+
+  &#hobbies {
+    background-color: #df4244;
+    color: white;
+    text-align: center;
+
+    iframe {
+      padding: 10px;
+    }
+  }
+
+  &#contact {
+    background-color: #f9f9f9;
+  }
+
+  .sectionTitleWrapper {
+    width: 50%;
+    border-bottom: 1px solid rgba(194, 170, 170, 0.31);
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .sectionTitle {
+    font-size: 34px;
+    padding-top: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    font-family: "Dosis", sans-serif;
+    padding-bottom: 5px;
+  }
+}
+
+.projects {
+  text-align: center;
+
+  .project {
+    cursor: pointer;
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    overflow-x: auto;
+    position: relative;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out;
+
+    .projectLogo {
+      height: 200px;
+      width: 335px;
+      padding-top: 10px;
+      overflow: hidden;
+      top: 0px;
+      display: block;
+      padding-bottom: 10px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 auto;
+    }
+
+    .textWrapper {
+      color: black;
+      padding: 10px;
+      font-size: 23px;
+      background-color: #f995001a;
+      height: 260px;
+      transition: all 0.3s ease-in-out;
+
+      .projectTitle {
+        display: block;
+        padding-bottom: 20px;
+        font-family: "Open Sans Condensed", sans-serif;
+        text-align: left;
+      }
+
+      .projectDescription {
+        vertical-align: middle;
+        display: table-cell;
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 4px 14px 17px rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+      .textWrapper {
+        background-color: #f9950085;
+      }
+    }
+  }
+}
+
+.resumeWrapper {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 12px #444;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 30px;
+
+  .resumeHeader {
+    margin-bottom: 30px;
+    font-size: 36px;
+    padding-top: 20px;
+
+    .name {
+      color: rgba(181, 23, 41, 0.97);
+    }
+
+    h2,
+    p {
+      display: inline-block;
+    }
+  }
+
+  .resumeTitle {
+    font-size: 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+  }
+
+  .resumeSection {
+    margin-bottom: 50px;
+  }
+
+  .resumeSectionHeader {
+    margin-bottom: 10px;
+    font-size: 24px;
+
+    .title {
+      color: #444;
+    }
+
+    .important {
+      font-weight: bold;
+      color: #111;
+    }
+
+    .date {
+      float: right;
+      font-size: 16px;
+    }
+  }
+
+  .resumeDescriptionWrapper {
+    margin-bottom: 25px;
+    line-height: 20px;
+    font-size: 15px;
+
+    .bulletWrapper {
+      display: block;
+      padding-left: 10px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    .resumeBullet {
+      padding-left: 5px;
+    }
+
+    .bulletSymbol {
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+    }
+
+    .resumeBullet {
+      display: inline-block;
+      top: 0px;
+    }
+
+    .resumeDescription {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.contactMeOptions {
+  text-align: center;
+}
+
+.contactMeOption {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 94px;
+  background-color: rgba(202, 46, 46, 0.7);
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #df4244;
+  }
+}
+
+.skillsGroupWrapper {
+  display: inline-block;
+  cursor: pointer;
+
+  .skill {
+    display: inline-block;
+    margin-right: 4px;
+    background-color: #dddada;
+    padding-right: 6px;
+    padding-left: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+
+  &.webTechnologies:hover {
+    .skill {
+      background-color: rgb(223, 66, 68);
+      color: white;
+    }
+  }
+
+  &.jsTechnologies:hover {
+    .skill {
+      background-color: rgb(232, 185, 100);
+      color: white;
+    }
+  }
+
+  &.programmingLanguages:hover {
+    .skill {
+      background-color: rgb(125, 205, 112);
+      color: white;
+    }
+  }
+
+  &.others:hover {
+    .skill {
+      background-color: rgb(122, 119, 147);
+      color: white;
+    }
+  }
+}
+
+.footer {
+  height: 50px;
+  color: white;
+  background: #1b1b1b;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  display: table;
+  width: 100%;
+
+  span {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}

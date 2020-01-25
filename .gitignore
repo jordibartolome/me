@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 dist
 deferred.js
+.DS_Store
