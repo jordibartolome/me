@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 import { createBrowserHistory } from "history";
-// import { store } from "./store";
 import { Router, Route } from "react-router-dom";
 
 // Reducers
@@ -12,10 +11,7 @@ const history = createBrowserHistory();
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <Router history={history}>
-    <Route exact path="/" component={App}>
-      {/* <Route path = "/second" component = {SecondPage}/> */}
-    </Route>
-    {/* <Route path="/home" component={Home} /> */}
+    <Route exact path="/" component={App} />
   </Router>,
   rootElement
 );

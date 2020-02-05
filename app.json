@@ -1,7 +1,27 @@
 {
   "name": "Jordi Bartolome - website",
-  "description": "A barebones Node.js app using Express 4",
+  "description": "Personal page of Jordi Bartolomé Guillén. Software developer engineer. Boston - Barcelona.",
   "repository": "https://github.com/jordibartolome/me",
-  "keywords": ["node", "express", "heroku"],
+  "keywords": [
+    "Jordi Bartolomé Guillén",
+    "Jordi",
+    "Jordi Bartolomé",
+    "Engineer",
+    "UPC",
+    "Telecos",
+    "Boston",
+    "Barcelona",
+    "Amazon",
+    "AWS",
+    "Noteflight",
+    "Volotea",
+    "Newshore",
+    "Telecommunications",
+    "Telecomunicacions",
+    "MIT",
+    "Enginyer",
+    "Violí",
+    "Música"
+  ],
   "image": "heroku/nodejs"
 }

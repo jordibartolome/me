@@ -159,11 +159,9 @@ export const SKILLS: ISkillGroup[] = [
     group: "Javascript Technologies",
     className: "jsTechnologies skillsGroupWrapper",
     elements: [
-      "Javascript",
+      "Javascript ES6",
       "React/Redux",
-      "jQuery",
       "Knockout",
-      "AJAX",
       "Web audio API",
       "BrainJS"
     ]
@@ -183,12 +181,12 @@ export const SKILLS: ISkillGroup[] = [
   {
     group: "Programming Languages",
     className: "programmingLanguages skillsGroupWrapper",
-    elements: ["Ruby on Rails", "Python", "Django", ".NET", "Java", "C#"]
+    elements: ["Ruby on Rails", "Python", "Django", "Java", "C#"]
   },
   {
     group: "Others",
     className: "others skillsGroupWrapper",
-    elements: ["Git", "Jenkins", "SEO"]
+    elements: ["Git", "SEO"]
   }
 ];
 
