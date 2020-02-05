@@ -173,6 +173,19 @@ body {
     padding-bottom: 40px;
   }
 
+  .openResumeIcon {
+    font-size: 40px;
+    right: 10px;
+    position: absolute;
+    bottom: 5px;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      color: #df4144;
+    }
+  }
+
   &#hobbies {
     background-color: #df4244;
     color: white;
@@ -203,6 +216,7 @@ body {
     margin-top: 0px;
     font-family: "Dosis", sans-serif;
     padding-bottom: 5px;
+    position: relative;
   }
 }
 

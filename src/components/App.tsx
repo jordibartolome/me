@@ -6,7 +6,8 @@ import {
   SKILLS,
   LANGUAGES,
   NETWORKS,
-  PUBLICATIONS
+  PUBLICATIONS,
+  RESUME_LINK
 } from "../data";
 import ProjectCard from "./ProjectCard";
 import Resume from "./Resume";
@@ -19,6 +20,16 @@ import "../styles/base.scss";
 import "../styles/font-awesome.min.css";
 
 export default class App extends Component {
+  constructor(props: any) {
+    super(props);
+
+    this.handleResumeClick = this.handleResumeClick.bind(this);
+  }
+
+  handleResumeClick() {
+    window.open(RESUME_LINK, "_blank");
+  }
+
   renderProjects() {
     const projectsJsx: JSX.Element[] = PROJECTS.map(
       (project: IProject, index) => (
@@ -40,7 +51,14 @@ export default class App extends Component {
     return (
       <div className="section" id="resume">
         <div className="sectionTitleWrapper">
-          <h3 className="sectionTitle">Resume</h3>
+          <h3 className="sectionTitle">
+            Resume{" "}
+            <i
+              onClick={this.handleResumeClick}
+              className="openResumeIcon fa fa-file-pdf-o"
+              aria-hidden="true"
+            ></i>
+          </h3>
         </div>
         <Resume
           jobs={JOBS}

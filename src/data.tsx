@@ -9,6 +9,8 @@ import {
 } from "./types";
 
 const DATE_FORMAT = "dd-MM-yyyy";
+export const RESUME_LINK =
+  "https://docs.google.com/document/d/16Fkdy_C7LjiDxMtol0pBb7x8EW2xeLKpwzO7CcCRt3k/edit#heading=h.nrl5r7tqva24";
 
 export const PROJECTS: IProject[] = [
   {
