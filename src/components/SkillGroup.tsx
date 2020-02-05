@@ -9,8 +9,12 @@ export default class SkillGroup extends Component<ISkillProps, {}> {
   render() {
     const { skillGroup } = this.props;
 
-    const skills = skillGroup.elements.map((skill: string) => {
-      return <p className="skill">{skill}</p>;
+    const skills = skillGroup.elements.map((skill: string, index: number) => {
+      return (
+        <p key={index} className="skill">
+          {skill}
+        </p>
+      );
     });
 
     return <div className={skillGroup.className}>{skills}</div>;

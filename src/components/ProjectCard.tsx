@@ -6,10 +6,21 @@ interface IProjectCardProps {
 }
 
 export default class ProjectCard extends Component<IProjectCardProps> {
+  constructor(props: any) {
+    super(props);
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    const { project } = this.props;
+    window.open(project.link, "_blank");
+  }
+
   render() {
     const { project } = this.props;
     return (
-      <div className="project">
+      <div className="project" onClick={this.handleClick}>
         <div
           style={{ backgroundImage: `url(${project.logoUrl})` }}
           className="projectLogo"

@@ -9,7 +9,7 @@ interface IJobProps {
 
 export default class Job extends Component<IJobProps, {}> {
   renderBullets(bullets: string[]) {
-    return bullets.map(bullet => <Bullet text={bullet} />);
+    return bullets.map((bullet, index) => <Bullet key={index} text={bullet} />);
   }
 
   renderDate() {}

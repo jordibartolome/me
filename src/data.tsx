@@ -8,7 +8,7 @@ export const PROJECTS: IProject[] = [
     name: "Amazon Web Services",
     logoUrl: "/images/aws.png",
     description: "AWS Detective, a new cybersecurity service.",
-    link: "https://www.aws.com"
+    link: "https://www.aws.com/detective"
   },
   {
     name: "Noteflight",

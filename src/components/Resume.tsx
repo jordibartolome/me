@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 
-import "../styles/reset.css";
-import "../styles/base.scss";
 import { IJob, IEducation, ISkillGroup, ILanguage } from "../types";
 import Job from "./Job";
 import Education from "./Education";
 import SkillGroup from "./SkillGroup";
 import Language from "./Language";
+
+import "../styles/reset.css";
+import "../styles/base.scss";
 
 interface IResumeProps {
   jobs: IJob[];
@@ -18,22 +19,28 @@ interface IResumeProps {
 export default class Resume extends Component<IResumeProps, {}> {
   renderJobs() {
     const { jobs } = this.props;
-    return jobs.map(job => <Job job={job} />);
+    return jobs.map((job, index) => <Job key={index} job={job} />);
   }
 
   renderEducation() {
     const { educations } = this.props;
-    return educations.map(education => <Education education={education} />);
+    return educations.map((education, index) => (
+      <Education key={index} education={education} />
+    ));
   }
 
   renderSkills() {
     const { skills } = this.props;
-    return skills.map(skillGroup => <SkillGroup skillGroup={skillGroup} />);
+    return skills.map((skillGroup, index) => (
+      <SkillGroup key={index} skillGroup={skillGroup} />
+    ));
   }
 
   renderLanguages() {
     const { languages } = this.props;
-    return languages.map(language => <Language language={language} />);
+    return languages.map((language, index) => (
+      <Language key={index} language={language} />
+    ));
   }
 
   render() {

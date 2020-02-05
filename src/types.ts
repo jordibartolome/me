@@ -42,3 +42,9 @@ export interface INetwork {
   className: string;
   link: string;
 }
+
+export interface ISection {
+  text: string;
+  selector: string;
+  position: number;
+}
