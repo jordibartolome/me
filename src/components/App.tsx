@@ -5,7 +5,8 @@ import {
   EDUCATIONS,
   SKILLS,
   LANGUAGES,
-  NETWORKS
+  NETWORKS,
+  PUBLICATIONS
 } from "../data";
 import ProjectCard from "./ProjectCard";
 import Resume from "./Resume";
@@ -46,6 +47,7 @@ export default class App extends Component {
           educations={EDUCATIONS}
           skills={SKILLS}
           languages={LANGUAGES}
+          publications={PUBLICATIONS}
         />
       </div>
     );

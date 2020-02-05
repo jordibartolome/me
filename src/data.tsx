@@ -1,5 +1,12 @@
 import { DateTime } from "luxon";
-import { IProject, IJob, ISkillGroup, INetwork, ILanguage } from "./types";
+import {
+  IProject,
+  IJob,
+  ISkillGroup,
+  INetwork,
+  ILanguage,
+  IPublication
+} from "./types";
 
 const DATE_FORMAT = "dd-MM-yyyy";
 
@@ -196,7 +203,18 @@ export const LANGUAGES: ILanguage[] = [
   },
   {
     language: "English",
-    level: "Professional working proficiency"
+    level: "Proficiency"
+  }
+];
+
+export const PUBLICATIONS: IPublication[] = [
+  {
+    title:
+      "Symbolic Music Information Retrieval with music21: New Applications to Score Following and Feature Extraction Beyond MIDI.",
+    where: "NIPS'11 - Music Machine Learning",
+    date: DateTime.fromFormat("16-12-2011", DATE_FORMAT),
+    link:
+      "https://web.mit.edu/music21/papers/Bartolome-Guillen_Cuthbert_ScoreFollower.pdf"
   }
 ];
 

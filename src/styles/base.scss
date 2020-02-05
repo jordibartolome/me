@@ -353,6 +353,19 @@ body {
       margin-bottom: 5px;
     }
   }
+
+  .publication {
+    .publicationTitle {
+      font-size: 18px;
+      font-weight: bold;
+      display: inline-block;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .contactMeOptions {

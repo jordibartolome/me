@@ -1,10 +1,17 @@
 import React, { Component } from "react";
 
-import { IJob, IEducation, ISkillGroup, ILanguage } from "../types";
+import {
+  IJob,
+  IEducation,
+  ISkillGroup,
+  ILanguage,
+  IPublication
+} from "../types";
 import Job from "./Job";
 import Education from "./Education";
 import SkillGroup from "./SkillGroup";
 import Language from "./Language";
+import Publication from "./Publication";
 
 import "../styles/reset.css";
 import "../styles/base.scss";
@@ -14,6 +21,7 @@ interface IResumeProps {
   educations: IEducation[];
   skills: ISkillGroup[];
   languages: ILanguage[];
+  publications: IPublication[];
 }
 
 export default class Resume extends Component<IResumeProps, {}> {
@@ -26,6 +34,13 @@ export default class Resume extends Component<IResumeProps, {}> {
     const { educations } = this.props;
     return educations.map((education, index) => (
       <Education key={index} education={education} />
+    ));
+  }
+
+  renderPublications() {
+    const { publications } = this.props;
+    return publications.map((publication, index) => (
+      <Publication key={index} publication={publication} />
     ));
   }
 
@@ -59,6 +74,10 @@ export default class Resume extends Component<IResumeProps, {}> {
         <div className="resumeSection" id="education">
           <p className="resumeTitle">Education</p>
           {this.renderEducation()}
+        </div>
+        <div className="resumeSection" id="publications">
+          <p className="resumeTitle">Publications</p>
+          {this.renderPublications()}
         </div>
         <div className="resumeSection" id="education">
           <p className="resumeTitle">Computer Skills</p>

@@ -33,6 +33,13 @@ export interface ISkillGroup {
   elements: string[];
 }
 
+export interface IPublication {
+  title: string;
+  date: DateTime;
+  where: string;
+  link: string;
+}
+
 export interface ILanguage {
   language: string;
   level: string;
