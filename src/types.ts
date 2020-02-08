@@ -40,6 +40,12 @@ export interface IPublication {
   link: string;
 }
 
+export interface ICourse {
+  title: string;
+  date: DateTime;
+  where: string;
+}
+
 export interface ILanguage {
   language: string;
   level: string;

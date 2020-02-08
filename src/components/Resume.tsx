@@ -5,12 +5,14 @@ import {
   IEducation,
   ISkillGroup,
   ILanguage,
-  IPublication
+  IPublication,
+  ICourse
 } from "../types";
 import Job from "./Job";
 import Education from "./Education";
 import SkillGroup from "./SkillGroup";
 import Language from "./Language";
+import Course from "./Course";
 import Publication from "./Publication";
 
 import "../styles/reset.css";
@@ -22,6 +24,7 @@ interface IResumeProps {
   skills: ISkillGroup[];
   languages: ILanguage[];
   publications: IPublication[];
+  courses: ICourse[];
 }
 
 export default class Resume extends Component<IResumeProps, {}> {
@@ -34,6 +37,13 @@ export default class Resume extends Component<IResumeProps, {}> {
     const { educations } = this.props;
     return educations.map((education, index) => (
       <Education key={index} education={education} />
+    ));
+  }
+
+  renderCourses() {
+    const { courses } = this.props;
+    return courses.map((courses, index) => (
+      <Course key={index} course={courses} />
     ));
   }
 
@@ -74,6 +84,10 @@ export default class Resume extends Component<IResumeProps, {}> {
         <div className="resumeSection" id="education">
           <p className="resumeTitle">Education</p>
           {this.renderEducation()}
+        </div>
+        <div className="resumeSection" id="education">
+          <p className="resumeTitle">Courses</p>
+          {this.renderCourses()}
         </div>
         <div className="resumeSection" id="publications">
           <p className="resumeTitle">Publications</p>

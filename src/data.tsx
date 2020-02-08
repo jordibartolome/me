@@ -5,7 +5,8 @@ import {
   ISkillGroup,
   INetwork,
   ILanguage,
-  IPublication
+  IPublication,
+  ICourse
 } from "./types";
 
 const DATE_FORMAT = "dd-MM-yyyy";
@@ -171,14 +172,7 @@ export const SKILLS: ISkillGroup[] = [
   {
     group: "Web Technologies",
     className: "webTechnologies skillsGroupWrapper",
-    elements: [
-      "HTML5",
-      "Webpack",
-      "CSS",
-      "ElasticSearch",
-      "AWS",
-      "Web Services"
-    ]
+    elements: ["HTML5", "Webpack", "CSS", "ElasticSearch", "AWS"]
   },
   {
     group: "Programming Languages",
@@ -215,6 +209,24 @@ export const PUBLICATIONS: IPublication[] = [
     date: DateTime.fromFormat("16-12-2011", DATE_FORMAT),
     link:
       "https://web.mit.edu/music21/papers/Bartolome-Guillen_Cuthbert_ScoreFollower.pdf"
+  }
+];
+
+export const COURSES: ICourse[] = [
+  {
+    title: "Machine Learning",
+    where: "Coursera",
+    date: DateTime.fromFormat("01-01-2018", DATE_FORMAT)
+  },
+  {
+    title: "Artificial Intelligence: Neural Networks",
+    where: "LinkedIn Learning",
+    date: DateTime.fromFormat("01-01-2020", DATE_FORMAT)
+  },
+  {
+    title: "Learning TensorFlow with JS",
+    where: "LinkedIn Learning",
+    date: DateTime.fromFormat("01-02-2020", DATE_FORMAT)
   }
 ];
 

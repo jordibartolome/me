@@ -7,7 +7,8 @@ import {
   LANGUAGES,
   NETWORKS,
   PUBLICATIONS,
-  RESUME_LINK
+  RESUME_LINK,
+  COURSES
 } from "../data";
 import ProjectCard from "./ProjectCard";
 import Resume from "./Resume";
@@ -66,6 +67,7 @@ export default class App extends Component {
           skills={SKILLS}
           languages={LANGUAGES}
           publications={PUBLICATIONS}
+          courses={COURSES}
         />
       </div>
     );
