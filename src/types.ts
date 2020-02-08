@@ -28,6 +28,7 @@ export interface IEducation {
 }
 
 export interface ISkillGroup {
+  id: string;
   group: string;
   className: string;
   elements: string[];

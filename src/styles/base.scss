@@ -387,9 +387,6 @@ body {
   }
 
   .course {
-    .courseTitle {
-    }
-
     .coursePlace {
       font-size: 12px;
       font-weight: bold;
@@ -435,6 +432,7 @@ body {
     border-radius: 5px;
     transition: all 0.3s ease;
     font-size: 14px;
+    margin-bottom: 3px;
   }
 
   &.webTechnologies:hover {
@@ -479,4 +477,8 @@ body {
     vertical-align: middle;
     display: table-cell;
   }
+}
+
+.tippy-tooltip {
+  font-family: "Source Sans Pro", sans-serif;
 }
