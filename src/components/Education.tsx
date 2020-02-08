@@ -19,7 +19,7 @@ export default class Education extends Component<IEducationProps, {}> {
 
     return (
       <div className="education">
-        <div className="resumeSectionHeader">
+        <div className="resumeSectionHeader dimmed">
           {createPositionText(education.title, education.university)}
           <div className="date">
             {createDateText(education.startDate, {

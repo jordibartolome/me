@@ -10,8 +10,8 @@ export default class Language extends Component<ILanguageProps> {
     const { language } = this.props;
 
     return (
-      <div className="education">
-        <div className="resumeSectionHeader">
+      <div className="languages">
+        <div className="resumeSectionHeader mediumSizeTitle">
           <span className="important">{language.language}</span>:{" "}
           {language.level}
         </div>

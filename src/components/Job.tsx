@@ -19,7 +19,7 @@ export default class Job extends Component<IJobProps, {}> {
 
     return (
       <div className="job">
-        <div className="resumeSectionHeader">
+        <div className="resumeSectionHeader dimmed">
           {createPositionText(job.title, job.company, job.city)}
 
           <div className="date">

@@ -309,7 +309,7 @@ body {
   }
 
   .resumeTitle {
-    font-size: 22px;
+    font-size: 30px;
     border-bottom: 1px solid rgba(223, 65, 68, 0.22);
     margin-bottom: 20px;
   }
@@ -322,8 +322,8 @@ body {
     margin-bottom: 10px;
     font-size: 24px;
 
-    .title {
-      color: #444;
+    &.dimmed {
+      color: #828181;
     }
 
     .important {
@@ -334,6 +334,7 @@ body {
     .date {
       float: right;
       font-size: 16px;
+      color: black;
     }
   }
 
@@ -369,9 +370,12 @@ body {
     }
   }
 
+  .mediumSizeTitle {
+    font-size: 18px;
+  }
+
   .publication {
     .publicationTitle {
-      font-size: 18px;
       font-weight: bold;
       display: inline-block;
 
@@ -384,7 +388,6 @@ body {
 
   .course {
     .courseTitle {
-      font-size: 18px;
     }
 
     .coursePlace {

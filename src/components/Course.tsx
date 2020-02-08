@@ -13,7 +13,7 @@ export default class Course extends Component<IcourseProps> {
 
     return (
       <div className="course">
-        <div className="resumeSectionHeader courseTitle">
+        <div className="resumeSectionHeader mediumSizeTitle">
           <span>{course.title}</span> -{" "}
           <span className="coursePlace">{course.where}</span>
           <div className="date">

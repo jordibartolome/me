@@ -25,7 +25,10 @@ export default class Publication extends Component<IPublicationProps, {}> {
     return (
       <div className="publication">
         <div className="resumeSectionHeader">
-          <p className="publicationTitle" onClick={this.handleClick}>
+          <p
+            className="publicationTitle mediumSizeTitle"
+            onClick={this.handleClick}
+          >
             {publication.title}
           </p>
           <div className="date">
